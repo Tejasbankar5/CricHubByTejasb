@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+}
+
+h2 {
+    color: #007bff;
+}
+
+form {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+#room-output {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 2rem auto 0;
+    text-align: center;
+}
+
+.hidden-section {
+    display: none;
+}
+
+.active-section {
+    display: block;
+}
+
+.dark-theme {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+}
+
+#chat-box {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.message {
+    margin: 1rem 0;
+}
+
+.user {
+    font-weight: bold;
+}
+
+.text {
+    margin-left: 0.5rem;
+}
+
+#input-area {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#user-input {
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 1rem;
+}
+
+#input-area button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#input-area button:hover {
+    background-color: #0056b3;
+}

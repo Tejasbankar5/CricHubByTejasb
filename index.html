@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CricHub - Connect, Compete, Celebrate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CricHub</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('custom-room')">Create Room</a></li>
+                <li><a href="#" onclick="showSection('features')">Features</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="active-section">
+        <h2>Welcome to CricHub</h2>
+        <p>Connect with friends, compete in exciting challenges, and celebrate every moment of the game like never before!</p>
+    </section>
+
+    <section id="custom-room" class="hidden-section">
+        <h2>Create Your Custom Room</h2>
+        <form id="room-form">
+            <label for="room-name">Room Name:</label>
+            <input type="text" id="room-name" required>
+            <label for="favorite-player">Favorite Player:</label>
+            <input type="text" id="favorite-player" required>
+            <button type="submit">Create Room</button>
+        </form>
+        <div id="room-output"></div>
+    </section>
+
+    <section id="features" class="hidden-section">
+        <h2>Key Features</h2>
+        <ul id="features-list"></ul>
+    </section>
+
+    <section id="chat-room" class="hidden-section dark-theme">
+        <h2 id="chat-room-title">Chat Room</h2>
+        <div id="chat-box">
+            <div class="message">
+                <span class="user">CricHub Bot:</span>
+                <span class="text">Welcome to the chat room! Let's get started with some cricket talk.</span>
+            </div>
+        </div>
+        <div id="input-area">
+            <input type="text" id="user-input" placeholder="Type a message..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
