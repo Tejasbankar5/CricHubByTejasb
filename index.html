@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>CricHub</h1>
+        <h1>CricHub : By TejasB</h1>
         <nav>
             <ul>
                 <li><a href="#" onclick="showSection('home')">Home</a></li>
@@ -20,7 +20,8 @@
 
     <section id="home" class="active-section">
         <h2>Welcome to CricHub</h2>
-        <p>Connect with friends, compete in exciting challenges, and celebrate every moment of the game like never before!</p>
+        <p>Connect with friends, compete in exciting challenges, and celebrate every moment of the game like never before! Make sure everything is fictional.</p>
+        <button onclick="showSection('custom-room')">Create Room</button>
     </section>
 
     <section id="custom-room" class="hidden-section">
@@ -42,16 +43,21 @@
 
     <section id="chat-room" class="hidden-section dark-theme">
         <h2 id="chat-room-title">Chat Room</h2>
-        <div id="chat-box">
-            <div class="message">
-                <span class="user">CricHub Bot:</span>
-                <span class="text">Welcome to the chat room! Let's get started with some cricket talk.</span>
-            </div>
-        </div>
+        <div id="chat-box"></div>
         <div id="input-area">
             <input type="text" id="user-input" placeholder="Type a message..." />
             <button onclick="sendMessage()">Send</button>
         </div>
+        <div id="points-area">
+            <h3>Points System</h3>
+            <p id="points-info">Engage in the conversation to earn points and become the Player of the Match!</p>
+            <ul id="points-list"></ul>
+        </div>
+    </section>
+
+    <section id="game-over" class="hidden-section">
+        <h2>Game Over</h2>
+        <div id="winner-info"></div>
     </section>
 
     <script src="scripts.js"></script>
